@@ -1,0 +1,22 @@
+nav {
+    width: calc(100% - 410px);
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    ul {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1000px;
+        *zoom: 1;
+        &:after {
+            clear: both;
+            display: block;
+            content: '';
+        }
+    }
+    li {
+        margin-top: 14px;
+        float: left;
+        width: 16.666666%;
+        }
+}

@@ -84,7 +84,7 @@
 	
 	
 	// module
-	exports.push([module.id, "body {\n  background-color: greenyellow;\n  display: block;\n  overflow: hidden;\n  height: calc(100% - 64px); }\n", ""]);
+	exports.push([module.id, "header {\n  background-color: brown;\n  display: block;\n  overflow: hidden;\n  padding: 1em;\n  color: black;\n  clear: left; }\n\nmain {\n  background-color: greenyellow;\n  display: block;\n  overflow: hidden;\n  padding: 1em;\n  color: black;\n  clear: left;\n  text-align: center; }\n\nfooter {\n  background-color: aquamarine;\n  display: block;\n  overflow: hidden;\n  padding: 1em;\n  color: black;\n  clear: left;\n  text-align: center; }\n\nnav {\n  width: calc(100% - 410px);\n  float: left;\n  height: 100%;\n  overflow: hidden; }\n  nav ul {\n    margin: 0 auto;\n    width: 90%;\n    max-width: 1000px;\n    *zoom: 1; }\n    nav ul:after {\n      clear: both;\n      display: block;\n      content: ''; }\n  nav li {\n    margin-top: 14px;\n    float: left;\n    width: 16.666666%; }\n", ""]);
 	
 	// exports
 
