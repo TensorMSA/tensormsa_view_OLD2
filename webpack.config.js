@@ -23,7 +23,7 @@ module.exports = {
     debug: true, // Switch loaders to debug mode
     output: {
         path: __dirname,
-        filename: './dist/[name].js' // Output for the multiple entry
+        filename: './dist/js/[name].js' // Output for the multiple entry
     },
     externals: nodeModules, // Prevent bundling of certain imported packages and instead retrieve these external packages at runtime.
     resolve: {
