@@ -25,7 +25,7 @@ module.exports = {
         path: __dirname,
         filename: './dist/js/[name].js' // Output for the multiple entry
     },
-    externals: nodeModules, // Prevent bundling of certain imported packages and instead retrieve these external packages at runtime.
+    //externals: nodeModules, // Prevent bundling of certain imported packages and instead retrieve these external packages at runtime.
     resolve: {
         // Add `.ts` and `.tsx` as a resolvable extension. 
         extensions: ['', '.webpack.js', '.web.js', '.js', '.jsx', '.ts', '.tsx']
