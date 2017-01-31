@@ -16,7 +16,8 @@ console.log('Node Modules: '+ JSON.stringify(nodeModules));
 module.exports = {
     target: 'web', // default is web
     entry: {
-        hoyaview: './src/ts/index.ts'
+        hoyaview_publish: './src/ts/index.ts',
+        hoyaview: './src/js/app.js',
     },
     devtool: 'sourcemaps',
     cache: true, // build 성능 향상
@@ -31,7 +32,17 @@ module.exports = {
         extensions: ['', '.webpack.js', '.web.js', '.js', '.jsx', '.ts', '.tsx']
     },
     module: { // An array of extensions that should be used to resolve modules.
-        loaders: [{
+        loaders: [
+        { 
+            test: /\.jsx?$/,         // Match both .js and .jsx files
+            exclude: /node_modules/, 
+            loader: "babel",
+            query:
+            {
+                presets:['es2015','react']
+            }
+        },            
+        {
             // test: A condition that must be met <-> exclude
             test: /\.tsx?$/,
             exclude: /node_modules/,

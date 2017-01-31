@@ -2,7 +2,7 @@ var http = require("http"),
     url = require("url"),
     path = require("path"),
     fs = require("fs")
-    port = process.argv[2] || 8888;
+    port = process.argv[2] || 8080;
 
 http.createServer(function(request, response) {
 
@@ -15,7 +15,7 @@ http.createServer(function(request, response) {
     '.js':   "text/javascript"
   };
 
-  var indexPath = './views/index.html';
+  var indexPath = './views/index-publish.html';
 
   fs.exists(filename, function(exists) {
     if(!exists) {
