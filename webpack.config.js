@@ -17,7 +17,7 @@ module.exports = {
     target: 'web', // default is web
     entry: {
         hoyaview_publish: './src/ts/index.ts',
-        hoyaview: './src/js/app.js',
+        hoyaview: './src/app/app.tsx',
     },
     devtool: 'sourcemaps',
     cache: true, // build 성능 향상

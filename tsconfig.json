@@ -7,7 +7,8 @@
     "strictNullChecks": true,
     "sourceMap": true,
     "watch": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "jsx": "react"
   },
   "include": [
       "src/**/*.ts" // compiler에게 ts파일의 위치를 알려줌, ** -> src에 포함된 하위디렉토리도 검색하는것을 의미
